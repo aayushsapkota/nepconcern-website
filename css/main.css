@@ -1,0 +1,88 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.Header_logo{
+    width: 80px;
+     margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.Nav, 
+.left_relatedlinks{
+    
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.Nav a{
+    text-decoration: none;
+   
+    padding-left: 5px;
+}
+.Nav a:hover{
+    color: gold;
+   
+}
+
+.left_relatedlinks{
+    padding-left: 20px;
+}
+
+.left_relatedlinks a{
+    display: block;
+    line-height: 30px;    
+}
+
+.Nav,
+.post,
+.left_relatedlinks,
+.right_relatedlinks,
+.footer{
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-style: solid;
+    border-width: thin;
+    border-color: #e8e8e8;
+}
+
+.Quick_links a{
+    display: block;
+}
+
+
+
+
+@media screen and (min-width:800px){
+    .left_relatedlinks,
+    .right_relatedlinks{
+        float: left;
+        width: 18%;
+        box-sizing: border-box;
+    }
+    
+    .mainContent{
+        box-sizing: border-box;
+        float: left;
+        width: calc(64% - 120px);
+    }
+    .footer{
+        clear: both;
+    }
+    .Quick_links, .Developer_info{
+       padding: 10px;
+        box-sizing: border-box;
+    }
+    .Quick_links{
+         float: left;
+        width: 40%;
+    }
+    .Developer__info{
+        float: right;
+        width: calc(60% - 20px);
+    }
+}
